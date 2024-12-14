@@ -5,6 +5,8 @@ import java.util.Arrays;
 /**
  * this method returns the minimum value in the given int array
  */
+
+
 public class ArrayUtil {
     public static int minNumInArr(int[]arr){
         int min = 0;
@@ -88,5 +90,38 @@ public class ArrayUtil {
 
 
         return total;
+    }
+
+    /**
+     * this method returns int array with give int element added at the end of the give int array
+     * @param arr
+     * @param num
+     * @return int arr
+     */
+    public static int [] addElemInArr(int []arr,int num){
+
+        int [] addedArr = Arrays.copyOf(arr,arr.length+1);
+        addedArr [addedArr.length-1]=num;
+
+
+        return addedArr;
+    }
+
+    /**
+     * this method returns int array with given int var args  elements added at the end of the give int array
+     * @param arr given int array
+     * @param arr2 given var args
+     * @return int array
+     */
+    public static int [] addElemInArray (int []arr, int ... arr2){
+
+        int [] addedAr= Arrays.copyOf(arr,arr.length+arr2.length);
+
+        for (int i = arr.length, j=0; i < addedAr.length; i++, j++) {
+            addedAr[i] =arr2[j];
+        }
+
+
+        return addedAr;
     }
 }
