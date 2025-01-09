@@ -34,5 +34,9 @@ public class multiDimArrayExample {
         System.out.println(arr2D[1][2]);
         System.out.println(Arrays.toString(arr2D[2]));
 
+
+
+
+
     }
 }
