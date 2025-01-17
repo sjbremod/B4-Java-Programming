@@ -1,0 +1,36 @@
+package day41_collection.queue;
+
+import java.util.PriorityQueue;
+
+public class QueueObjects {
+    public static void main(String[] args) {
+
+        //add --- offer
+        //remove -- poll
+        //get -- element
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<Integer>(); // insertion order is NOT kept - does NOT allow null
+
+        priorityQueue.add(2);
+        priorityQueue.add(10);
+        priorityQueue.add(8);
+        priorityQueue.add(1);
+        priorityQueue.add(2); // duplicates are allowed
+        //priorityQueue.add(null); // null is NOT allowed
+
+        System.out.println(priorityQueue);
+        priorityQueue.offer(30);
+        priorityQueue.offer(1);//[1, 2, 1, 10, 2, 30, 8]
+        System.out.println(priorityQueue);
+        System.out.println();
+        priorityQueue.poll(); //fifo first 1 was removed
+        System.out.println(priorityQueue);
+
+        priorityQueue.poll(); //fifo
+        System.out.println(priorityQueue);
+
+
+
+
+
+    }
+}
