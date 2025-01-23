@@ -13,6 +13,7 @@ public class Garage {
         Honda honda = new Honda();
         honda.start();
         System.out.println();
+
         Tesla tesla = new Tesla();
         tesla.start();
         tesla.charge();
