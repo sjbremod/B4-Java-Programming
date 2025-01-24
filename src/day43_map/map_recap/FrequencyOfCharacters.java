@@ -1,6 +1,5 @@
-package day_43_map.map_recap;
+package day43_map.map_recap;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
